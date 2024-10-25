@@ -1,5 +1,5 @@
 *{
-    block-size: border-box;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
@@ -14,3 +14,86 @@ header{
      background-position: bottom;
      position: relative;
 } 
+header .bg-gradient{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 70%);
+    width: 100%;
+    min-height: 300px;
+}
+
+#register{
+    background-color: #ffffff;
+    width: 100%;
+    height: 400px;
+    max-width: 350px;
+    position: absolute;
+    bottom: 0;
+    right: 10vw;
+    box-shadow: 0 0 2.1rem rgba(red, green, blue, alpha);
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    padding: 20px;
+    color: #333;
+}
+.register p{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.field{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#register input{
+    width: 100%;
+    padding: .75rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#register input[type=radio]{
+    width: 25px;  
+}
+
+#register button{
+    width: 100%;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+.header-border{
+    display: flex;
+    border-bottom: 1px solid rgba(255,255,255,.25);
+}
+.logo{
+    width: 200px;
+    color: #ffffff;
+    line-height: 60px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: 1px 1px 0px #000;
+}
+
+.menu{
+    flex: 1;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end;
+}
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 20px;
+    
+}
